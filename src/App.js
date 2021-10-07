@@ -7,9 +7,10 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
-function App() {
+
+const App = () => {
   return (
-    <>
+    <div>
       <Banner />
       <Navbar />
       <Services />
@@ -18,8 +19,8 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App
