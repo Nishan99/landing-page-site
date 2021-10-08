@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -6,14 +6,13 @@ import { FaPinterest } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import pp1 from "../images/man-01.png";
 function Banner() {
-  const [infoMe,setInfoMe] = useState({
+  const [infoMe, setInfoMe] = useState({
     title: "I am Sumit Sunar",
-    text: "I'm an enthusiast web developer since long time",
+    text: "I'm an enthusiast and inspiring web developer",
     image: pp1,
   });
-  const [smLogo,setSmLogo] = useState([
+  const [smLogo, setSmLogo] = useState([
     {
-     
       logo: <FaFacebookF />,
     },
     {
@@ -34,7 +33,7 @@ function Banner() {
       <div className="row">
         <div className="header__section">
           <ul className="header__ul">
-            {smLogo.map((logo,index) => {
+            {smLogo.map((logo, index) => {
               return <li key={index}>{logo.logo}</li>;
             })}
           </ul>
@@ -52,7 +51,7 @@ function Banner() {
         </div>
         <div className="col-6">
           <div className="banner__img">
-            <img src={infoMe.image} alt="pp"/>
+            <img src={infoMe.image} alt="pp" />
           </div>
         </div>
       </div>
