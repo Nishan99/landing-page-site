@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 function Navbar() {
-  const [navLinks,setNavLinks] = useState([
+  const [navLinks, setNavLinks] = useState([
     {
       name: "Home",
       class: "#banner",
@@ -36,7 +36,6 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar__container">
         <div className="navbar__left-logo">
-        
           <h1>
             bil
             <span>dev</span>
@@ -44,7 +43,7 @@ function Navbar() {
         </div>
 
         <ul className="navbar__right">
-          {navLinks.map((link,index) => {
+          {navLinks.map((link, index) => {
             return (
               <li key={index}>
                 <a href={link.class}>{link.name}</a>

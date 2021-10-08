@@ -3,13 +3,13 @@ import { FaGithub } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 
 function Services() {
-  const [header] = useState({
+  const [header, setHeader] = useState({
     heading: "INTERESTS",
     subHeading: "My INTERESTS",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum standard dummy text.",
   });
 
-  const [service,setService] = useState([
+  const [service, setService] = useState([
     {
       icon: <FaGithub className="commonIcons" />,
       heading: "Web Development",
@@ -17,27 +17,27 @@ function Services() {
     },
     {
       icon: <FaTelegram className="commonIcons" />,
-      heading: "Web Development",
+      heading: "Mobile App Development",
       text: " Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy",
     },
     {
       icon: <FaGithub className="commonIcons" />,
-      heading: "Web Development",
+      heading: "E-Commerce",
       text: " Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy",
     },
     {
       icon: <FaGithub className="commonIcons" />,
-      heading: "Web Development",
+      heading: "UI/UX Design",
       text: " Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy",
     },
     {
       icon: <FaGithub className="commonIcons" />,
-      heading: "Web Development",
+      heading: "Programming Skills",
       text: " Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy",
     },
     {
       icon: <FaGithub className="commonIcons" />,
-      heading: "Web Development",
+      heading: "Team Work and Collaboration",
       text: " Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy",
     },
   ]);
@@ -50,7 +50,7 @@ function Services() {
           <p className="mainContent">{header.text}</p>
         </div>
         <div className="row">
-          {service.map((item,index) => {
+          {service.map((item, index) => {
             return (
               <div className="services__box" key={index}>
                 {item.icon}
