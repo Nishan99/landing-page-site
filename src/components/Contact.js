@@ -4,12 +4,12 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 
 function Contact() {
-  const [contents] = useState({
+  const [contents, setContents] = useState({
     header: "HAVE ANY QUERIES",
     heading: "Contact Me",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
   });
-  const [contDet] = useState([
+  const [contDet,setCountDet] = useState([
     {
       logo: <FaMapMarkerAlt />,
       heading: "Locate me",

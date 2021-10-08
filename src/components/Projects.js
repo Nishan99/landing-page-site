@@ -6,7 +6,7 @@ function Projects() {
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
   });
 
-  const [projects] = useState([
+  const [projects,setProjects] = useState([
     {
       class: "web",
       heading: "E-Commerce Website",

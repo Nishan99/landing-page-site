@@ -9,7 +9,7 @@ function Services() {
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum standard dummy text.",
   });
 
-  const [service] = useState([
+  const [service,setService] = useState([
     {
       icon: <FaGithub className="commonIcons" />,
       heading: "Web Development",

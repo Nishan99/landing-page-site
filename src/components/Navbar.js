@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 function Navbar() {
-  const [navLinks] = useState([
+  const [navLinks,setNavLinks] = useState([
     {
       name: "Home",
       class: "#banner",
@@ -36,7 +36,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar__container">
         <div className="navbar__left-logo">
-          {/* <img src={nav_logo} alt="logo" /> */}
+        
           <h1>
             bil
             <span>dev</span>

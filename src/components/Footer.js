@@ -7,7 +7,7 @@ function Footer() {
   const [contents] = useState({
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   });
-  const [logos] = useState([
+  const [logos,setLogos] = useState([
     {
       logo: <FaFacebookF />,
     },
@@ -33,7 +33,6 @@ function Footer() {
       <div className="footer">
         <div className="footer__header">
           <div className="navbar__left-logo">
-            {/* <img src={nav_logo} alt="logo" /> */}
             <h1>
               bil
               <span>dev</span>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Skills() {
-  const [contents] = useState({
+  const [contents,setContents] = useState({
     heading1: "I,VE SKILLS ON",
     heading2: "Let's Work Together",
     text: "Phasellus accumsan scelerisque dolor, quis mattis justo bibendum non. Nulla sollicitudin turpis in elementum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae",
@@ -38,9 +38,9 @@ function Skills() {
         <span>{contents.buttonText}</span>
       </div>
       <div className="skill__bars">
-        {skillbar.map((skill) => {
+        {skillbar.map((skill,index ) => {
           return (
-            <div key={Math.random() * 1000} className={skill.PGL}>
+            <div key={index} className={skill.PGL}>
               <p>{skill.PGL}</p>
               <div className={skill.cls1}>
                 <div className={skill.cls2}></div>

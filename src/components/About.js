@@ -10,7 +10,7 @@ function About() {
     about:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
   });
-  const [personalDetails] = useState([
+  const [personalDetails,setPersonalDetails] = useState([
     {
       heading: "Name",
       value: "Sumit Sunar",

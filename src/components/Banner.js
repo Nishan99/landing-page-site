@@ -1,18 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { useState } from "react/cjs/react.development";
 import pp1 from "../images/man-01.png";
 function Banner() {
-  const [state] = React.useState({
+  const [infoMe,setInfoMe] = useState({
     title: "I am Sumit Sunar",
     text: "I'm an enthusiast web developer since long time",
     image: pp1,
   });
-  const [smLogo] = useState([
+  const [smLogo,setSmLogo] = useState([
     {
      
       logo: <FaFacebookF />,
@@ -39,8 +38,8 @@ function Banner() {
               return <li key={index}>{logo.logo}</li>;
             })}
           </ul>
-          <h1 className="banner__header">{state.title}</h1>
-          <p>{state.text}</p>
+          <h1 className="banner__header">{infoMe.title}</h1>
+          <p>{infoMe.text}</p>
           <div className="header__buttons">
             <a
               href="https://drive.google.com/file/d/138Q46I6nlnYJviJ-I8U3xjqkT4kBmHpn/view?usp=sharing"
@@ -53,7 +52,7 @@ function Banner() {
         </div>
         <div className="col-6">
           <div className="banner__img">
-            <img src={state.image} alt="pp" />
+            <img src={infoMe.image} alt="pp"/>
           </div>
         </div>
       </div>
